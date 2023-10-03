@@ -85,6 +85,26 @@ const SignUp = () => {
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="username"
             >
+              Gender
+            </label>
+            <input
+              className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+                errors.name ? "border-red-500" : ""
+              }`}
+              type="text"
+              placeholder=" Gender"
+            />
+            {errors.name && (
+              <p className="text-red-500 text-xs italic">
+                Username is required
+              </p>
+            )}
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="username"
+            >
               Date of birth
             </label>
             <input
@@ -167,7 +187,7 @@ const SignUp = () => {
           </h2>
           <div className="flex items-center justify-between">
             <button
-              className="bg-blue-500  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-purple-800  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Sign Up
