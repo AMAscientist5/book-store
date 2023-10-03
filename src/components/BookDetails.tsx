@@ -12,7 +12,6 @@ import { setNotification } from "../redux/notification/notificationSlice";
 import { IBook } from "./AllBooks";
 import { addToWishlist } from "../redux/features/whislist/whislistSlice";
 import { addToReaded } from "../redux/features/readedBook/readedBookSlice";
-import { toast } from "react-toastify";
 
 const BookDetail = () => {
   const { id } = useParams();

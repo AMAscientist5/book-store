@@ -1,8 +1,8 @@
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import {
-  addToReaded,
+  // addToReaded,
   removeFromReaded,
-  removeOneReaded,
+  // removeOneReaded,
 } from "../redux/features/readedBook/readedBookSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 
@@ -20,15 +20,15 @@ const ReadedBook = () => {
 
   const dispatch = useAppDispatch();
 
-  const handleAddBook = (book: IBook) => {
-    dispatch(addToReaded(book));
-  };
+  // const handleAddBook = (book: IBook) => {
+  //   dispatch(addToReaded(book));
+  // };
   const handleRemoveBook = (book: IBook) => {
     dispatch(removeFromReaded(book));
   };
-  const handleRemoveOne = (book: IBook) => {
-    dispatch(removeOneReaded(book));
-  };
+  // const handleRemoveOne = (book: IBook) => {
+  //   dispatch(removeOneReaded(book));
+  // };
 
   return (
     <div className="">

@@ -1,7 +1,7 @@
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import {
-  addToWishlist,
-  removeOne,
+  // addToWishlist,
+  // removeOne,
   removeFromWishlist,
 } from "../redux/features/whislist/whislistSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
@@ -15,19 +15,19 @@ interface IBook {
   quantity?: number;
 }
 const Cart = () => {
-  const { books, total } = useAppSelector((state) => state.wishlist);
+  const { books } = useAppSelector((state) => state.wishlist);
 
   const dispatch = useAppDispatch();
 
-  const handleAddBook = (book: IBook) => {
-    dispatch(addToWishlist(book));
-  };
+  // const handleAddBook = (book: IBook) => {
+  //   dispatch(addToWishlist(book));
+  // };
   const handleRemoveBook = (book: IBook) => {
     dispatch(removeFromWishlist(book));
   };
-  const handleRemoveOne = (book: IBook) => {
-    dispatch(removeOne(book));
-  };
+  // const handleRemoveOne = (book: IBook) => {
+  //   dispatch(removeOne(book));
+  // };
 
   return (
     <div className="">
